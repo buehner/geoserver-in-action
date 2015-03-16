@@ -368,11 +368,11 @@ curl \
   -XPOST \
   -H "Content-type: text/xml" \
   -d "<featureType>
-        <name>myft</name>
-        <nativeName>myftsource</nativeName>
-        <nativeCRS>EPSG:4326</nativeCRS>
-        <enabled>true</enabled>
-      </featureType>" \
+		<name>myft</name>
+		<nativeName>myftsource</nativeName>
+		<nativeCRS>EPSG:4326</nativeCRS>
+		<enabled>true</enabled>
+	  </featureType>" \
   http://my/geoserver/rest/workspaces/myws/datastores/mydata/featuretypes
 					</code></pre>
 
@@ -403,8 +403,8 @@ curl \
 					<pre><code data-trim class="xml">
 <workspaces>
   <workspace>
-    <name>myws</name>
-    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://my/geoserver/rest/workspaces/myws.xml" type="application/xml"></atom:link>
+	<name>myws</name>
+	<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://my/geoserver/rest/workspaces/myws.xml" type="application/xml"></atom:link>
   </workspace>
 </workspaces>
 					</code><pre>
@@ -422,10 +422,10 @@ curl \
   -XPUT \
   -H "Content-type: text/xml" \
   -d "<featureType>
-        <enabled>true</enabled>
-        <srs>EPSG:900913</srs>
-        <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
-      </featureType>" \
+		<enabled>true</enabled>
+		<srs>EPSG:900913</srs>
+		<projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+	  </featureType>" \
   http://my/geoserver/rest/workspaces/myws/datastores/myds/featuretypes/myft
 					</code></pre>
 
@@ -636,24 +636,24 @@ HTTP/1.1 200 OK
 					<small>Workshop: <a href="http://workshops.terrestris.de">http://workshops.terrestris.de</a><br/><br/>
 					Vortrag: <a href="http://rawgit.com/buehner/geoserver-in-action/master/index.html">http://rawgit.com/buehner/geoserver-in-action/master/index.html</a></small>
 				</section>
-				
-				 <section id="imprint">
-                    <h3>Impressum</h3>
-                    <ul>
-                        <li>Autoren:
-                            <ul>
-                                <li>Nils Bühner, terrestris GmbH &amp; Co. KG, <a href="mailto:buehner@terrestris.de">buehner@terrestris.de</a></li>
-                                <li>Daniel Koch, terrestris GmbH &amp; Co. KG, <a href="mailto:koch@terrestris.de">koch@terrestris.de</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            Lizenz: <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/buehner/geoserver-in-action">Vortragsfolien</a>
-                        </li>
-                    </ul>
-                </section>
+
+				<section id="imprint">
+					<h3>Impressum</h3>
+					<ul>
+						<li>Autoren:
+							<ul>
+								<li>Nils Bühner, terrestris GmbH &amp; Co. KG, <a href="mailto:buehner@terrestris.de">buehner@terrestris.de</a></li>
+								<li>Daniel Koch, terrestris GmbH &amp; Co. KG, <a href="mailto:koch@terrestris.de">koch@terrestris.de</a></li>
+							</ul>
+						</li>
+						<li>
+							Lizenz: <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+						</li>
+						<li>
+							<a href="https://github.com/buehner/geoserver-in-action">Vortragsfolien</a>
+						</li>
+					</ul>
+				</section>
 			</section>
 
 		</div>
